@@ -3,8 +3,13 @@
 print("Datos Personales")
 print("==========================\n")
 Vnom = input("Ingrese su nombre: ")
-Vedad =int(input("Ingrese su edad :"))
-print("=========================5")
+while True:
+    try:
+        Vedad =int(input("Ingrese su edad :"))
+        break
+    except:
+        print("Valor No Coreresponde")    
+print("==========================='")
 print(f"Su nombre es:{Vnom}")
 print(f"Su edad es:{Vedad}")
 
